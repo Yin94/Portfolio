@@ -27,4 +27,145 @@
   padding: 20px;
   color: black;
 }
+
+.container .headerImage {
+  text-align: center;
+}
+
+.container .headerImage img {
+  max-width: 100%;
+}
+
+.container .myProjects {
+  margin: 100px 0;
+}
+
+.container .myProjects h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.container .myProjects .projectList {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.container .myProjects .projectContainer {
+  border: 1px solid black;
+  padding: 20px 10px;
+  grid-gap: 10px 20px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'pic name' 'pic descrip';
+}
+
+.container .myProjects .projectContainer h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+  text-align: center;
+}
+
+.container .myProjects .projectContainer > div {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: pic;
+}
+
+.container .myProjects .projectContainer > div img {
+  max-width: 100%;
+}
+
+.container .myProjects .projectContainer p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: descrip;
+}
+
+.container .skills {
+  width: 100%;
+}
+
+.container .skills h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.container .skills > div {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.container .skills > div > div img {
+  max-width: 100%;
+}
+
+.container .skills > div > div * {
+  padding: 10px 5px;
+}
+
+.container .contactForm {
+  margin: 100px 0;
+}
+
+.container .contactForm h2 {
+  padding: 10px;
+  text-align: center;
+}
+
+.container .contactForm form {
+  width: 60%;
+  margin: auto;
+}
+
+.container .contactForm form .controlGroup {
+  padding: 10px;
+}
+
+.container .contactForm form .controlGroup input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.container .contactForm form button {
+  background-color: black;
+  color: wheat;
+  float: right;
+  padding: 7px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.container footer {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container footer div {
+  width: 100px;
+  margin: auto;
+}
+
+.container footer div a {
+  text-decoration: none;
+}
+
+.container footer div img {
+  margin: 0 5px;
+  width: 20px;
+}
+
+.container footer div img:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=app.css.map */

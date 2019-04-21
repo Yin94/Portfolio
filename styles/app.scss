@@ -22,4 +22,109 @@
       color: black;
     }
   }
+  .headerImage {
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+  }
+  .myProjects {
+    margin: 100px 0;
+    h2 {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .projectList {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      display: grid;
+    }
+    .projectContainer {
+      border: 1px solid black;
+      padding: 20px 10px;
+      grid-gap: 10px 20px;
+      display: grid;
+      grid-template-areas: 'pic name' 'pic descrip';
+      h3 {
+        grid-area: name;
+        text-align: center;
+      }
+      > div {
+        grid-area: pic;
+        img {
+          max-width: 100%;
+        }
+      }
+      p {
+        grid-area: descrip;
+      }
+    }
+  }
+  .skills {
+    width: 100%;
+    h2 {
+      text-align: center;
+      padding: 10px;
+    }
+    > div {
+      grid-template-columns: 1fr 1fr 1fr;
+      display: grid;
+      grid-gap: 10px;
+      > div {
+        img {
+          max-width: 100%;
+        }
+        * {
+          padding: 10px 5px;
+        }
+      }
+    }
+  }
+  .contactForm {
+    margin: 100px 0;
+    h2 {
+      padding: 10px;
+      text-align: center;
+    }
+    form {
+      width: 60%;
+      margin: auto;
+      .controlGroup {
+        input {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+        }
+        padding: 10px;
+      }
+      button {
+        background-color: black;
+        color: wheat;
+        float: right;
+        padding: 7px 10px;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 10px;
+      }
+    }
+  }
+  footer {
+    div {
+      width: 100px;
+      margin: auto;
+      a {
+        text-decoration: none;
+      }
+      img {
+        margin: 0 5px;
+        width: 20px;
+      }
+      img:hover {
+        cursor: pointer;
+      }
+    }
+    margin-top: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
