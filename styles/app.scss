@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 60%;
+  margin: auto;
+  padding-top: 10px;
+  header {
+    text-align: center;
+    small {
+      display: block;
+      padding: 20px;
+      border-bottom: 1px solid black;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 20px;
+      color: black;
+    }
+  }
+}
